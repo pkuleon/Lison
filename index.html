@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Lison by pkuleon</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Lison</h1>
+        <h2>An executable JSON like Lisp, it can be parsed by Javascript, PHP, Python, ActionScript ...</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/pkuleon/Lison/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/pkuleon/Lison/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/pkuleon/Lison" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="lison" class="anchor" href="#lison"><span class="octicon octicon-link"></span></a>Lison</h1>
+
+<p>An executable JSON like Lisp, it can be parsed by Javascript, PHP, Python, ActionScript ...</p>
+
+<p><code>Lison</code> lets you easily use the same business logic in difference languages.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Sample code</p>
+
+<div class="highlight"><pre><span class="nx">code</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"progn"</span><span class="p">,</span> 
+
+    <span class="c1">// set value</span>
+    <span class="p">[</span><span class="s2">"="</span><span class="p">,</span> <span class="s2">"$cardSize"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+
+    <span class="c1">// set value</span>
+    <span class="p">[</span><span class="s2">"="</span><span class="p">,</span> <span class="s2">"$cardSize"</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span>
+
+    <span class="c1">// create a list</span>
+    <span class="p">[</span><span class="s2">"list"</span><span class="p">,</span> <span class="s2">"$AA"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="s2">"list"</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="s2">"66"</span><span class="p">,</span> <span class="mi">88</span><span class="p">]],</span>
+
+    <span class="c1">// create a hashtable</span>
+    <span class="p">[</span><span class="s2">"hash"</span><span class="p">,</span> <span class="s2">"$hash_a"</span><span class="p">,</span> <span class="p">{</span><span class="s2">"key_1"</span><span class="o">:</span> <span class="s2">"value_10"</span><span class="p">}],</span>
+
+    <span class="c1">// set a key in a hashtable</span>
+    <span class="p">[</span><span class="s2">"setk"</span><span class="p">,</span> <span class="s2">"$hash_a"</span><span class="p">,</span> <span class="s2">"key_1"</span><span class="p">,</span> <span class="s2">"value_NEW"</span><span class="p">],</span>
+
+    <span class="c1">// print something</span>
+    <span class="p">[</span><span class="s2">"print"</span><span class="p">,</span> <span class="s2">"getk form $hash_a:"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"getk"</span><span class="p">,</span> <span class="s2">"$hash_a"</span><span class="p">,</span> <span class="s2">"key_1"</span><span class="p">]],</span>
+
+    <span class="c1">// while </span>
+    <span class="p">[</span><span class="s2">"="</span><span class="p">,</span> <span class="s2">"$i"</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="s2">"="</span><span class="p">,</span> <span class="s2">"$j"</span><span class="p">,</span> <span class="mi">300</span><span class="p">],</span> 
+    <span class="p">[</span><span class="s2">"while"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"&lt;"</span><span class="p">,</span> <span class="s2">"$i"</span><span class="p">,</span> <span class="s2">"$j"</span><span class="p">],</span> <span class="p">[</span>
+
+        <span class="c1">// if .. else</span>
+        <span class="p">[</span><span class="s2">"if"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"&lt;="</span><span class="p">,</span> <span class="s2">"$i"</span> <span class="p">,</span><span class="mi">9</span><span class="p">],</span> <span class="p">[</span>
+            <span class="p">[</span><span class="s2">"print"</span><span class="p">,</span> <span class="s2">"hahah &lt;= 9"</span><span class="p">]</span>
+        <span class="p">],</span> <span class="p">[</span>
+            <span class="p">[</span><span class="s2">"print"</span><span class="p">,</span> <span class="s2">"hahah &gt; 9"</span><span class="p">]</span>
+        <span class="p">]],</span>
+
+        <span class="c1">// push data to list</span>
+        <span class="p">[</span><span class="s2">"push"</span><span class="p">,</span> <span class="s2">"$AA"</span><span class="p">,</span> <span class="s2">"$i"</span><span class="p">],</span>
+
+        <span class="c1">// ++i</span>
+        <span class="p">[</span><span class="s2">"incf"</span><span class="p">,</span> <span class="s2">"$i"</span><span class="p">],</span>
+
+    <span class="p">]],</span>
+
+    <span class="c1">// for .. in</span>
+    <span class="p">[</span><span class="s2">"forin"</span><span class="p">,</span> <span class="s2">"$AA"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"$key"</span><span class="p">,</span> <span class="s2">"$value"</span><span class="p">],</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s2">"print"</span><span class="p">,</span> <span class="s2">"form AA:"</span><span class="p">,</span> <span class="s2">"$value"</span><span class="p">]</span>
+    <span class="p">]],</span>
+
+    <span class="c1">// print</span>
+    <span class="p">[</span><span class="s2">"print"</span><span class="p">,</span> <span class="s2">"var i = "</span><span class="p">],</span>
+
+    <span class="c1">// return i</span>
+    <span class="p">[</span><span class="s2">"print"</span><span class="p">,</span> <span class="s2">"$i"</span><span class="p">]</span>
+
+<span class="p">];</span>
+</pre></div>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
