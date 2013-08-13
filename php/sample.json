@@ -1,0 +1,23 @@
+["progn", 
+    ["=", "$cardSize", 1],
+    ["=", "$cardSize", 1000],
+    ["list", "$AA", 0, 2, ["list", 66, "66", 88]],
+    ["hash", "$hash_a", {"key_1": "value_10"}],
+    ["setk", "$hash_a", "key_1", "value_NEW"],
+    ["print", "getk form $hash_a:", ["getk", "$hash_a", "key_1"]],
+    ["=", "$i", 0], ["=", "$j", 300], 
+    ["while", ["<", "$i", "$j"], [
+        ["if", ["<=", "$i" ,9], [
+            ["print", "hahah <= 9"]
+        ], [
+            ["print", "hahah > 9"]
+        ]],
+        ["push", "$AA", "$i"],
+        ["incf", "$i"],
+    ]],
+    ["forin", "$AA", ["$key", "$value"], [
+        ["print", "form AA:", "$value"]
+    ]],
+    ["print", "var i = "],
+    ["print", "$i"]
+]
