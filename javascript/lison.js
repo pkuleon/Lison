@@ -82,8 +82,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["abs", -10]
-             * >> 10
+             *     ["abs", -10]
+             *     >> 10
              */
             'abs': function(p){
                 return Math.abs.apply(null, p);
@@ -96,8 +96,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["ceil", 1.4]
-             * >> 2
+             *     ["ceil", 1.4]
+             *     >> 2
              */
             'ceil': function(p){
                 return Math.ceil.apply(null, p);
@@ -110,8 +110,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["cos", 3]
-             * >> -0.9899924966004454
+             *     ["cos", 3]
+             *     >> -0.9899924966004454
              */
             'cos': function(){
                 return Math.cos.apply(null, p);
@@ -124,8 +124,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["exp", 1]
-             * >> 2.718281828459045
+             *     ["exp", 1]
+             *     >> 2.718281828459045
              */
             'exp': function(){
                 return Math.exp.apply(null, p);
@@ -138,8 +138,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["floor", 1.6]
-             * >> 1
+             *     ["floor", 1.6]
+             *     >> 1
              */
             'floor': function(){
                 return Math.floor.apply(null, p);
@@ -153,8 +153,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["log", 2]
-             * >> 0.6931471805599453
+             *     ["log", 2]
+             *     >> 0.6931471805599453
              */
             'log': function(){
                 return Math.log.apply(null, p);
@@ -167,8 +167,8 @@
              * @param {Number} ... Multiple arguments
              * @return {Number} x value
              * @example
-             * ["max", 5, 10]
-             * >> 10
+             *     ["max", 5, 10]
+             *     >> 10
              */
             'max': function(){
                 return Math.max.apply(null, p);
@@ -181,8 +181,8 @@
              * @param {Number} ... Multiple arguments
              * @return {Number} x value
              * @example
-             * ["min", 5, 10]
-             * >> 5
+             *     ["min", 5, 10]
+             *     >> 5
              */
             'min': function(){
                 return Math.min.apply(null, p);
@@ -197,8 +197,8 @@
              * @param {Number} y A Number
              * @return {Number} value value
              * @example
-             * ["pow", 2, 8]
-             * >> 256
+             *     ["pow", 2, 8]
+             *     >> 256
              */
             'pow': function(){
                 return Math.pow.apply(null, p);
@@ -212,8 +212,8 @@
              * @param {Number} y A Number
              * @return {Number} value value
              * @example
-             * ["random", 1, 10]
-             * >> 3
+             *     ["random", 1, 10]
+             *     >> 3
              */
             'random': function(){
                 if (p.length >= 2){
@@ -230,8 +230,8 @@
              * @param {Number} x A Number
              * @return {Number} value value
              * @example
-             * ["round", 2.5]
-             * >> 3
+             *     ["round", 2.5]
+             *     >> 3
              */
             'round': function(){
                 return Math.round.apply(null, p);
@@ -244,8 +244,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["sin", 3]
-             * >> 0.1411200080598672
+             *     ["sin", 3]
+             *     >> 0.1411200080598672
              */
             'sin': function(){
                 return Math.sin.apply(null, p);
@@ -258,8 +258,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["sqrt", 9]
-             * >> 3
+             *     ["sqrt", 9]
+             *     >> 3
              */
             'sqrt': function(){
                 return Math.sqrt.apply(null, p);
@@ -272,8 +272,8 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["tan", 90]
-             * >> -1.995200412208242
+             *     ["tan", 90]
+             *     >> -1.995200412208242
              */
             'tan': function(){
                 return Math.tan.apply(null, p);
@@ -287,11 +287,11 @@
              * @param {Number} x A Number
              * @return {Number} x value
              * @example
-             * ["=", "$a", 1]
-             * ["incf", "$a"]
-             * >> 2
-             * ["++", "$a"]
-             * >> 3
+             *     ["=", "$a", 1]
+             *     ["incf", "$a"]
+             *     >> 2
+             *     ["++", "$a"]
+             *     >> 3
              */
             'incf': function(p){
                 var _var = p[0],
@@ -322,8 +322,8 @@
              * @param {Number|String} b A Number
              * @return {Number} x value
              * @example
-             * ["+", 10, 1]
-             * >> 11
+             *     ["+", 10, 1]
+             *     >> 11
              */
             '+': function(p){
                 return p[0] + p[1];
@@ -337,8 +337,8 @@
              * @param {Number} b A Number
              * @return {Number} x value
              * @example
-             * ["-", 10, 1]
-             * >> 9
+             *     ["-", 10, 1]
+             *     >> 9
              */
             '-': function(p){
                 return p[0] - p[1];
@@ -352,8 +352,8 @@
              * @param {Number} b A Number
              * @return {Number} x value
              * @example
-             * ["*", 6, 4]
-             * >> 24
+             *     ["*", 6, 4]
+             *     >> 24
              */
             '*': function(p){
                 return p[0] * p[1];
@@ -367,8 +367,8 @@
              * @param {Number} b A Number
              * @return {Number} x value
              * @example
-             * ["/", 6, 3]
-             * >> 2
+             *     ["/", 6, 3]
+             *     >> 2
              */
             '/': function(p){
                 return p[0] * p[1];
@@ -382,8 +382,8 @@
              * @param {Number} b A Number
              * @return {Number} x value
              * @example
-             * ["/", 9, 2]
-             * >> 1
+             *     ["/", 9, 2]
+             *     >> 1
              */
             'mod': function(){
                 return p[0] % p[1];
@@ -397,8 +397,8 @@
              * @param {Number} b A Number
              * @return {Boolean} x value
              * @example
-             * [">", 10, 2]
-             * >> true
+             *     [">", 10, 2]
+             *     >> true
              */
             '>': function(p){
                 return p[0] > p[1];
@@ -412,8 +412,8 @@
              * @param {Number} b A Number
              * @return {Boolean} x value
              * @example
-             * ["<", 10, 20]
-             * >> true
+             *     ["<", 10, 20]
+             *     >> true
              */
             '<': function(p){
                 return p[0] < p[1];
@@ -427,8 +427,8 @@
              * @param {Number} b A Number
              * @return {Boolean} x value
              * @example
-             * [">=", 10, 10]
-             * >> true
+             *     [">=", 10, 10]
+             *     >> true
              */
             '>=': function(p){
                 return p[0] >= p[1];
@@ -442,8 +442,8 @@
              * @param {Number} b A Number
              * @return {Boolean} x value
              * @example
-             * ["<=", 10, 10]
-             * >> true
+             *     ["<=", 10, 10]
+             *     >> true
              */
             '<=': function(p){
                 return p[0] <= p[1];
@@ -457,10 +457,10 @@
              * @param {Any} b A Number
              * @return {Boolean} x value
              * @example
-             * ["==", 10, 10]
-             * >> true
-             * ["==", 10, "10"]
-             * >> false
+             *     ["==", 10, 10]
+             *     >> true
+             *     ["==", 10, "10"]
+             *     >> false
              */
             '==': function(p){
                 // use the strict 
@@ -475,8 +475,8 @@
              * @param {Any} b A Number
              * @return {Boolean} x value
              * @example
-             * ["!=", 10, 11]
-             * >> true
+             *     ["!=", 10, 11]
+             *     >> true
              */
             'not': function(p){
                 return p[0] != p[1];
@@ -497,8 +497,8 @@
              * @param {Any} ... Multiple arguments
              * @return {Boolean} x value
              * @example
-             * ["and", condition A, condition B, ...]
-             * >> true
+             *     ["and", condition A, condition B, ...]
+             *     >> true
              */
             'and': function(p){
                 var _value = true;
@@ -515,8 +515,8 @@
              * @param {Any} ... Multiple arguments
              * @return {Boolean} x value
              * @example
-             * ["or", condition A, condition B, ...]
-             * >> true
+             *     ["or", condition A, condition B, ...]
+             *     >> true
              */
             'or': function(p){
                 var _value = false;
@@ -536,9 +536,9 @@
              * @param {Any} x value
              * @return {Any} x value
              * @example
-             * ["set", "$A", 10]
-             * ["=", "$A", 10]
-             * >> A = 10
+             *     ["set", "$A", 10]
+             *     ["=", "$A", 10]
+             *     >> A = 10
              */
             'set': function(p){
                 try{
@@ -564,9 +564,9 @@
              * @param {String} name Variable name
              * @return {Any} x value
              * @example
-             * ["set", "$A", 10]
-             * ["get", "$A"]
-             * >> A = 10
+             *     ["set", "$A", 10]
+             *     ["get", "$A"]
+             *     >> A = 10
              */
             'get': function(p){
                 //alert(p);
@@ -598,8 +598,8 @@
              * @param {Any} ... Multiple arguments
              * @return {list} x value
              * @example
-             * ["=", "$A", ["list", 1,2,3,4,5]]
-             * >> A = 1,2,3,4,5
+             *     ["=", "$A", ["list", 1,2,3,4,5]]
+             *     >> A = 1,2,3,4,5
              */
             'list': function(p){
                 return p;
@@ -612,9 +612,9 @@
              * @param {list} list a list
              * @return {list} x value
              * @example
-             * ["=", "$A", ["list", 1,2,3,4,5]]
-             * ["pop", "$A"]
-             * >> A = 1,2,3,4
+             *     ["=", "$A", ["list", 1,2,3,4,5]]
+             *     ["pop", "$A"]
+             *     >> A = 1,2,3,4
              */
             'pop': function(p){
                 return p[0] && p[0].pop && p[0].pop();
@@ -628,9 +628,9 @@
              * @param {Any} x push x to the list
              * @return {list} x value
              * @example
-             * ["=", "$A", ["list", 1,2,3,4,5]]
-             * ["push", "$A", "Something"]
-             * >> A = 1,2,3,4,5,Something
+             *     ["=", "$A", ["list", 1,2,3,4,5]]
+             *     ["push", "$A", "Something"]
+             *     >> A = 1,2,3,4,5,Something
              */
             'push': function(p){
                 return p[0] && p[0].push && p[0].push(p[1]);
@@ -643,9 +643,9 @@
              * @param {list} list a list
              * @return {Number} x value
              * @example
-             * ["=", "$A", ["list", 1,2,3,4,5]]
-             * ["len", "$A"]
-             * >> 5
+             *     ["=", "$A", ["list", 1,2,3,4,5]]
+             *     ["len", "$A"]
+             *     >> 5
              */
             'len': function(p){
                 return p[0] && p[0].length || 0;
@@ -658,30 +658,30 @@
              * @param {list} list a list
              * @return {Number} x value
              * @example
-             * ["append", ["list", "A","B","C"], ["list", 1,2,3,4,5]]
-             * >> A,B,C,1,2,3,4,5
+             *     ["append", ["list", "A","B","C"], ["list", 1,2,3,4,5]]
+             *     >> A,B,C,1,2,3,4,5
              */
             'append': function(p){
                 return p[0] && p[1] && ([].concat(p[0]).concat(p[1]));
             },
             
             /**
-             * String
+             * String Processing
              *  
              * @name string
              * @namespace
              */
             /**
              * Get Substring
-             * @name string.len
+             * @name string.substr
              * @function
              * @param {String} string text
              * @param {Number} form
              * @param {Number} length
              * @return {String} x value
              * @example
-             * ["substr", "Hello Lison", 1, 2]
-             * >> el
+             *     ["substr", "Hello Lison", 1, 2]
+             *     >> el
              */
             'substr': function(p){
                 return p[0].substr(p[1], p[2]);
@@ -696,8 +696,8 @@
              * @param {String} b text
              * @return {String} x value
              * @example
-             * ["replace", "Hello Lison", "Li", "J"]
-             * >> Hello Json
+             *     ["replace", "Hello Lison", "Li", "J"]
+             *     >> Hello Json
              */
             'replace': function(p){
                 return p[0].replace(new RegExp(String(p[1])), p[2]);
@@ -716,9 +716,9 @@
              * @param {Hash} x value
              * @return {Hash} x value
              * @example
-             * ["=", "$hash_a", ["hash", {"key": "value"}]]
-             * ["getk", "$hash_a", "key"]
-             * >> value
+             *     ["=", "$hash_a", ["hash", {"key": "value"}]]
+             *     ["getk", "$hash_a", "key"]
+             *     >> value
              */
             'hash': function(p){
                 return p[0];
@@ -731,9 +731,9 @@
              * @param {String} key key of the hash
              * @return {String} x value
              * @example
-             * ["=", "$hash_a", ["hash", {"key": "value"}]]
-             * ["getk", "$hash_a", "key"]
-             * >> value
+             *     ["=", "$hash_a", ["hash", {"key": "value"}]]
+             *     ["getk", "$hash_a", "key"]
+             *     >> value
              */
             'getk': function(p){
                 return p[0][p[1]];
@@ -747,12 +747,12 @@
              * @param {Any} value the value
              * @return {Hash} x value
              * @example
-             * ["=", "$hash_a", ["hash", {"key": "value"}]]
-             * ["getk", "$hash_a", "key"]
-             * >> value
-             * ["setk", "$hash_a", "key", "new_value"]
-             * ["getk", "$hash_a", "key"]
-             * >> new_value
+             *     ["=", "$hash_a", ["hash", {"key": "value"}]]
+             *     ["getk", "$hash_a", "key"]
+             *     >> value
+             *     ["setk", "$hash_a", "key", "new_value"]
+             *     ["getk", "$hash_a", "key"]
+             *     >> new_value
              */
             'setk': function(p){
                 p[0][p[1]] = p[2];
@@ -769,11 +769,11 @@
              * @param {Any} something is true ?
              * @param {Any} another is false ?
              * @example
-             * ["if", ["<=", "$i" ,9], [
-             *     ["print", "hahah <= 9"]
-             * ], [
-             *     ["print", "hahah > 9"]
-             * ]],
+             *     ["if", ["<=", "$i" ,9], [
+             *         ["print", "hahah <= 9"]
+             *     ], [
+             *         ["print", "hahah > 9"]
+             *     ]],
              */
             'if': function(p){
                 //alert(p);
@@ -804,16 +804,16 @@
              * @param {Any} condition
              * @param {Any} something
              * @example
-			 * ["=", "$A", ["list", "Lima", 6, 7, 8, "Nine"]],
-             * ["forin", $A, ["$index", "$value"], [
-             *     ["print", "$index", "$value"],
-             *     ["print", "$value"]
-             * ]],
-			 * >> 0 Lima
-			 * >> 1 6
-			 * >> 2 7
-			 * >> 3 8
-			 * >> 4 Nine
+			 *     ["=", "$A", ["list", "Lima", 6, 7, 8, "Nine"]],
+             *     ["forin", $A, ["$index", "$value"], [
+             *         ["print", "$index", "$value"],
+             *         ["print", "$value"]
+             *     ]],
+			 *     >> 0 Lima
+			 *     >> 1 6
+			 *     >> 2 7
+			 *     >> 3 8
+			 *     >> 4 Nine
              */
             'forin': function(p){
                 var target = p[0],
@@ -893,12 +893,12 @@
              * @param {Any} condition
              * @param {Any} something
              * @example
-			 * ["=", "$i", 0],
-             * ["while", ["<", "$i" ,100], [
-             *     ["print", "$i"],
-			 *     ["incf", "$i"]
-             * ]],
-			 * repeat print 100 times
+			 *     ["=", "$i", 0],
+             *     ["while", ["<", "$i" ,100], [
+             *         ["print", "$i"],
+			 *         ["incf", "$i"]
+             *     ]],
+			 *     >> repeat print 100 times
              */
             'while': function(p){
                 //console.log(p);
@@ -957,7 +957,7 @@
              * @function
              * @param {Any} ... Multiply arguments
              * @example
-			 * ["print", "$i", "test", 1234]
+			 *     ["print", "$i", "test", 1234]
              */
             'print': function(p){
                 try{
@@ -1043,3 +1043,81 @@
     }
     
 })(this);
+
+// TODO: push pop len
+// find reg
+// Math cos  exp expt floor incf isqrt logand logior max min mod nil not or random round sin sqrt t zerop
+//example:
+var s2222 = ["-", ["*","$cardSize",10], 70];
+var s = ["progn", 
+    //~ ["set", "$i", 0],
+    
+    ["=", "$cardSize", 1],
+    ["=", "$cardSize", 1000],
+    //~ ["set", "$j", 1000], // 90000
+    
+    //["list", "$AA", ],
+    
+    //["list", "$S", 0, 2, 4],
+    ["=", "$AA", ["list", 0, 2, ["list", 66, "66", 88]]],
+    
+    ["=", "$hash_a", ["hash", {"key_1": "value_10"}]],
+    
+    ["setk", "$hash_a", "key_1", "value_NEW"],
+    
+    ["print", "getk form $hash_a:", ["getk", "$hash_a", "key_1"]],
+    
+    //["print", ["and", ["<", 10, 1], [">", 10, 5]]],
+    
+    ["=", "$i", 0],
+    ["=", "$j", 200], // 90000
+    ["while", ["<", "$i", "$j"], [
+        
+        //~ //["set", "$i", ["+", "$i", 1]],
+        //["set", "$i", ["+", "$i", 1]]
+        
+        ["if", ["<=", "$i" ,9], [
+            ["print", "hahah <= 9"]
+        ], [
+            ["print", "hahah > 9"]
+        ]],
+    
+        ["push", "$AA", "$i"],
+        
+        //["=", "$i", ["+", "$i", 1]]
+        ["incf", "$i"]
+        
+        //["set", "$k", 300]
+        //["print", "$i"]
+    ]],
+    
+    
+    //~ ["forin", ['list',3,4,5], ["$key", "$value"], [
+        //~ ['print', '$value']
+    //~ ]],
+    
+    ["forin", "$AA", ["$key", "$value"], [
+        //["print", "form AA:", "$value"]
+        ["print", "forin haha"]
+    ]],
+    
+    ["print", "var i = "],
+    ["print", "$i"]
+    
+];
+
+
+
+
+var g_var = {'cardSize': 21};
+var out = lison(s, g_var);
+
+//console.log(out);
+
+
+/*
+
+https://acl.readthedocs.org/en/latest/zhTW/ch2.html
+
+//})();
+*/
