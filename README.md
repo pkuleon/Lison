@@ -5,9 +5,7 @@ An executable JSON like Lisp, it can be parsed by Javascript, PHP, Python, Actio
 
 `Lison` lets you easily use the same business logic in difference languages.
 
-Visit http://pkuleon.github.io/Lison/ for more information.
-
-[build status]
+Visit https://github.com/pkuleon/Lison/wiki for more information.
 
 
 
